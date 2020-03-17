@@ -8,6 +8,7 @@ if [[ ! -f "$PULSAR_BROKER_CONF" ]]; then
         echo "clusterName=$PULSAR_CLUSTER_NAME"
         echo "brokerServicePort=$PULSAR_BROKER_SERVICE_PORT"
         echo "webServicePort=$PULSAR_WEB_SERVICE_PORT"
+        echo "advertisedAddress=$PULSAR_ADVERTISED_ADDRESS"
         echo "managedLedgerDefaultEnsembleSize=3"
         echo "managedLedgerDefaultWriteQuorum=2"
         echo "managedLedgerDefaultAckQuorum=2"

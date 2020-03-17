@@ -10,7 +10,8 @@ ENV ZK_SERVERS=localhost:2181 \
     PULSAR_BROKER_CONF_DIR=/pulsar/conf \
     PULSAR_CLUSTER_NAME=pulsar-cluster \
     PULSAR_BROKER_SERVICE_PORT=6650 \
-    PULSAR_WEB_SERVICE_PORT=6680
+    PULSAR_WEB_SERVICE_PORT=6680 \
+    PULSAR_ADVERTISED_ADDRESS=localhost
 
 RUN set -x \
 # install dependencies
