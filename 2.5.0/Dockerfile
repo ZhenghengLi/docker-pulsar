@@ -49,9 +49,9 @@ RUN set -x \
 && chown -R pulsar:pulsar "${PULSAR_BROKER_CONF_DIR}" "${PULSAR_LOG_DIR}" \
 && chmod 777 "${PULSAR_BROKER_CONF_DIR}" "${PULSAR_LOG_DIR}"
 
-COPY entrypoint.sh /scripts/
+COPY entrypoint.sh check_cnxn_address.sh /scripts/
 
-ENV PATH=/opt/"apache-pulsar-${PS_VERSION}"/bin:$PATH \
+ENV PATH=/scripts:/opt/"apache-pulsar-${PS_VERSION}"/bin:$PATH \
     PULSAR_BROKER_CONF="${PULSAR_BROKER_CONF_DIR}/broker.conf"
 
 USER pulsar
