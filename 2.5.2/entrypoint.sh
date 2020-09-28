@@ -12,6 +12,7 @@ if [[ ! -f "$PULSAR_BROKER_CONF" ]]; then
         echo "allowAutoTopicCreation=$PULSAR_ALLOW_AUTO_TOPIC_CREATION"
         echo "allowAutoTopicCreationType=$PULSAR_ALLOW_AUTO_TOPIC_CREATION_TYPE"
         echo "defaultNumPartitions=$PULSAR_DEFAULT_NUM_PARTITIONS"
+        echo "subscriptionExpirationTimeMinutes=$PULSAR_SUBSCRIPTION_EXPIRATION_MINUTES"
         echo "managedLedgerDefaultEnsembleSize=3"
         echo "managedLedgerDefaultWriteQuorum=2"
         echo "managedLedgerDefaultAckQuorum=2"
